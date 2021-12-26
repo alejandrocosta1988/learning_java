@@ -1,5 +1,5 @@
 // Demonstration of inheritance. Superclasss Employee
-package inheritance
+package inheritance;
 
 import java.time.*;
 
@@ -32,10 +32,10 @@ public class Employee
         return this.hireDay;
     }
 
-    public double raiseSalary(byPercent)
+    public void raiseSalary(double byPercent)
     {
         double raise = this.salary * byPercent/100;
         this.salary += raise;
     }
-    
+
 }
