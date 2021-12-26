@@ -15,6 +15,6 @@ public class TestManager
         staff[2] = new Employee("Tommy Tester", 40000, 1990, 3, 15);
 
         for (Employee e : staff)
-            System.out.println("Name = " + e.getName() + "/nSalary = " + e.getSalary());
+            System.out.println("Name = " + e.getName() + "\nSalary = " + e.getSalary());
     }
 }
