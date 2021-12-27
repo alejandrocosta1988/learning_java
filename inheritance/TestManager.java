@@ -10,7 +10,7 @@ public class TestManager
 
         var staff = new Employee[3];
 
-        staff[0] = boss;
+        staff[0] = boss; //Object variables are polymorphic. A variable of type Employee can refer to an Employee instance, but also to an instance of any subclass of Employee, such as Manager.
         staff[1] = new Employee("Harry Hacker", 50000, 1989, 10, 1);
         staff[2] = new Employee("Tommy Tester", 40000, 1990, 3, 15);
 
