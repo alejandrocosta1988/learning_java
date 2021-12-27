@@ -1,6 +1,6 @@
 package inheritance;
 
-public class Manager extends Employee
+public class Manager extends Employee //keyword 'extends' --> it makes Manager a subclass of Employee.
 {
     private double bonus;
 
@@ -13,13 +13,13 @@ public class Manager extends Employee
     */
     public Manager(String name, double salary, int year, int month, int day)
     {
-        super(name, salary, year, month, day);
+        super(name, salary, year, month, day); //keyword super --> it calls the constructor of the superclass Employee.
         bonus = 0;
     }
 
-    public double getSalary()
+    public double getSalary() //a method that exists in the superclass can be modified in the subclass that inherits it.
     {
-        double baseSalary = super.getSalary();
+        double baseSalary = super.getSalary(); //keyword super --> it refers to a method of the superclass Employee. Otherwise, getSalary would call itself.
         return baseSalary + bonus;
     }
 
@@ -27,5 +27,5 @@ public class Manager extends Employee
     {
         this.bonus = b;
     }
-    
+
 }
