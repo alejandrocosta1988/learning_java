@@ -15,7 +15,7 @@ public class Student extends Person
         this.major = major;
     }
 
-    public String getDescription()
+    public String getDescription() //implementation of Person abstract method, so Student is a concrete class
     {
         return "a student majoring in " + major;
     }
