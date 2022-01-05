@@ -35,4 +35,9 @@ public class Employee
           && this.salary == other.salary
           && Objects.equals(this.hireDay, other.hireDay);
     }
+
+    public String toString()
+    {
+        return this.getClass().getName() + "[name = " + this.name + ", salary = " + this.salary + ", hireDay = " + this.hireDay + "]";
+    }
 }
