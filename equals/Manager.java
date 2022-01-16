@@ -22,4 +22,9 @@ public class Manager extends Employee
         //super.equals checked that this and other belong to the same class
         return this.bonus == other.bonus;
     }
+
+    public String toString()
+    {
+        return super.toString() + "[bonus = " + this.bonus + "]";
+    }
 }
