@@ -28,5 +28,6 @@ public class TestEquals
         boss.setBonus(5000);
 
         System.out.println("boss.toString(): " + boss);
+        System.out.println("carl.equals(boss): " + carl.equals(boss));
     }
 }
