@@ -14,4 +14,12 @@ public class Manager extends Employee
     {
         this.bonus = bonusValue;
     }
+
+    public boolean equals(Object otherObject)
+    {
+        if (!super.equals(otherObject)) return false;
+        var other = (Manager) otherObject;
+        //super.equals checked that this and other belong to the same class
+        return this.bonus == other.bonus;
+    }
 }
