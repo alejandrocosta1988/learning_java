@@ -24,6 +24,7 @@ public class TestEquals
 
         var carl = new Manager("Carl Cracker", 80000, 1987, 12, 15);
         var boss = new Manager("Carl Cracker", 80000, 1987, 12, 15);
-        
+
+        boss.setBonus(5000);
     }
 }
