@@ -21,5 +21,9 @@ public class TestEquals
         System.out.println("alice1.equals(bob): " + alice1.equals(bob));
 
         System.out.println("bob.toString(): " + bob.toString());
+
+        var carl = new Manager("Carl Cracker", 80000, 1987, 12, 15);
+        var boss = new Manager("Carl Cracker", 80000, 1987, 12, 15);
+        
     }
 }
