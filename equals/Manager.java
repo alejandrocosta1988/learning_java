@@ -9,4 +9,9 @@ public class Manager extends Employee
         super(name, salary, year, month, day);
         this.bonus = 0;
     }
+
+    public void setBonus(double bonusValue)
+    {
+        this.bonus = bonusValue;
+    }
 }
